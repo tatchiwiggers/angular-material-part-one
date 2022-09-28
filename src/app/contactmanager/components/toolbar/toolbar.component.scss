@@ -1,0 +1,28 @@
+.sidenav-toggle {
+    display: none;
+    // Let's just add some more styling to make the button look a little bit nicer. 
+    // So first of all, lets set width and height to 56px. 
+    // let's set padding and margin to 0 and 8 px, but also the min-width to 56px. 
+    padding: 0;
+    margin: 8px;
+    min-width: 56px;
+
+    // And when we actually display the button within this mediaQuery,
+    // lets align it to the center
+    @media (max-width: 720px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    // so we'll define a class for the mat-icon within the sidenav-toggle,
+    // which increases the font size and also sets the height, and
+    // width, and the line height to the actual height of the toolbar which is 56px.
+    mat-icon {
+        font-size: 30px;
+        height: 56px;
+        width: 56px;
+        line-height: 56px;
+        color: white;
+    }
+}
